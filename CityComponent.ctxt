@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.params=currentOrder\ s\ sp\ u
+comment0.target=CityComponent(int,\ int,\ boolean,\ boolean)
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ TreeComponent\r\n
+comment1.params=order\ g2\ sky\ space\ ufo
+comment1.target=void\ drawCity(int,\ java.awt.Graphics2D,\ int,\ boolean,\ boolean)
+comment10.params=
+comment10.target=boolean\ getUfo()
+comment2.params=page
+comment2.target=void\ paintComponent(java.awt.Graphics)
+comment3.params=order
+comment3.target=void\ setOrder(int)
+comment4.params=
+comment4.target=int\ getOrder()
+comment5.params=s
+comment5.target=void\ setSky(int)
+comment6.params=
+comment6.target=int\ getSky()
+comment7.params=sp
+comment7.target=void\ setSpace(boolean)
+comment8.params=
+comment8.target=boolean\ getSpace()
+comment9.params=u
+comment9.target=void\ setUfo(boolean)
+numComments=11
