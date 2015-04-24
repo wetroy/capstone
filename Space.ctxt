@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.params=x\ y\ m\ s\ star
 comment0.target=Space(int,\ int,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color)
-comment0.text=\r\n\ The\ constructor\ for\ objects\ of\ class\ Moon\r\n\ @param\ x\ \ \ \ \ the\ x\ point\ where\ the\ left\ side\ of\ the\ moon\ starts\ to\ be\ drawn\r\n\ @param\ y\ \ \ \ \ the\ y\ point\ where\ the\ top\ of\ the\ moon\ starts\ to\ be\ drawn\r\n
+comment0.text=\r\n\ The\ constructor\ for\ objects\ of\ class\ Moon\r\n\ @param\ x\ \ \ \ \ the\ x\ point\ where\ the\ left\ side\ of\ the\ moon/sun\ starts\ to\ be\ drawn\r\n\ @param\ y\ \ \ \ \ the\ y\ point\ where\ the\ top\ of\ the\ moon/sun\ starts\ to\ be\ drawn\r\n\ @param\ m\ \ \ \ \ the\ main\ color\ of\ the\ moon\ or\ sun\r\n\ @param\ s\ \ \ \ \ if\ it\ is\ drawing\ a\ moon\ this\ will\ create\ the\ color\ of\ the\ craters\r\n\ @param\ star\ \ this\ is\ the\ color\ that\ the\ stars\ will\ be\ if\ it\ is\ night\ time\r\n
 comment1.params=g2
 comment1.target=void\ draw(java.awt.Graphics2D)
 comment1.text=\r\n\ creates\ the\ moon\ with\ its\ color,\ size,\ coordinates,\ and\ craters\r\n\r\n\ @param\ \ \ \ g2\ \ \ \ a\ graphics\ object\ that\ is\ imported\ \r\n

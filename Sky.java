@@ -3,10 +3,10 @@ import java.awt.geom.Rectangle2D;
 import java.awt.Color;
 
 /**
- * Write a description of class Sky here.
+ * A sky for the backround of the window that can be places anywhere in the window
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Billy Troy
+ * @version 4/14/15
  */
 public class Sky
 {
@@ -14,12 +14,13 @@ public class Sky
     private int xLeft;
     /** the y point where the top of the sky starts to be drawn */    
     private int yTop;
-    
+    /** the color the sky will be */
     private Color color;
     /**
      * The constructor for objects of class Sky
      * @param x     the x point where the left side of the sky starts to be drawn
      * @param y     the y point where the top of the sky starts to be drawn
+     * @param c     the color the sky will be drawn as
      */
     public Sky(int x, int y, Color c)
     {

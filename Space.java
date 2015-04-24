@@ -21,8 +21,11 @@ public class Space
     private Color stars;
     /**
      * The constructor for objects of class Moon
-     * @param x     the x point where the left side of the moon starts to be drawn
-     * @param y     the y point where the top of the moon starts to be drawn
+     * @param x     the x point where the left side of the moon/sun starts to be drawn
+     * @param y     the y point where the top of the moon/sun starts to be drawn
+     * @param m     the main color of the moon or sun
+     * @param s     if it is drawing a moon this will create the color of the craters
+     * @param star  this is the color that the stars will be if it is night time
      */
     public Space(int x, int y, Color m, Color s, Color star)
     {

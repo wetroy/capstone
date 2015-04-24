@@ -3,10 +3,10 @@ import java.awt.geom.Rectangle2D;
 import java.awt.Color;
 
 /**
- * Write a description of class Grass here.
+ * Grass for the backround of the window that can be places anywhere
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Billy Troy
+ * @version 4/24/15
  */
 public class Grass
 {
@@ -14,11 +14,13 @@ public class Grass
     private int xLeft;
     /** the y point where the top of the grass starts to be drawn */    
     private int yTop;
+    /** the color the grass will be */
     private Color color;
     /**
      * The constructor for objects of class Grass
      * @param x     the x point where the left side of the grass starts to be drawn
      * @param y     the y point where the top of the grass starts to be drawn
+     * @param c     the color the grass will be drawn as
      */
     public Grass(int x, int y, Color c)
     {

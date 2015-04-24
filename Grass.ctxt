@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.params=x\ y\ c
 comment0.target=Grass(int,\ int,\ java.awt.Color)
-comment0.text=\r\n\ The\ constructor\ for\ objects\ of\ class\ Grass\r\n\ @param\ x\ \ \ \ \ the\ x\ point\ where\ the\ left\ side\ of\ the\ grass\ starts\ to\ be\ drawn\r\n\ @param\ y\ \ \ \ \ the\ y\ point\ where\ the\ top\ of\ the\ grass\ starts\ to\ be\ drawn\r\n
+comment0.text=\r\n\ The\ constructor\ for\ objects\ of\ class\ Grass\r\n\ @param\ x\ \ \ \ \ the\ x\ point\ where\ the\ left\ side\ of\ the\ grass\ starts\ to\ be\ drawn\r\n\ @param\ y\ \ \ \ \ the\ y\ point\ where\ the\ top\ of\ the\ grass\ starts\ to\ be\ drawn\r\n\ @param\ c\ \ \ \ \ the\ color\ the\ grass\ will\ be\ drawn\ as\r\n
 comment1.params=g2
 comment1.target=void\ draw(java.awt.Graphics2D)
 comment1.text=\r\n\ creates\ the\ grass\ with\ its\ color,\ size,\ and\ coordinates\r\n\r\n\ @param\ \ \ \ g2\ \ \ \ a\ graphics\ object\ that\ is\ imported\ \r\n
