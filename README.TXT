@@ -25,3 +25,10 @@ placed randomly across the sky and a moon with craters will move across the
 sky as the order of the city changes. The fifth button turn the ufo on and
 off. If the ufo is on a ufo will be placed at a random position in the 
 window.
+HOW THIS PROJECT DEMONSTRATES LEARNING: This projects takes in what we have 
+learned from multiple labs and many units. It consists of creating buttons 
+and a GUI interface that changes, creating multiple objects that get displayed,
+using if statements and for loops, creating multiple classes that work together 
+with dependencies to create a final product, and with making classes with multiple 
+parameters so that these classes can be minipulated more by other classes so that 
+less code has to be written and not as many classes have to be created.
