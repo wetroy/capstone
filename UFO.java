@@ -5,10 +5,10 @@ import java.awt.Polygon;
 import java.awt.geom.Rectangle2D;
 
 /**
- * Write a description of class UFO here.
+ * A UfO with a beam coming down that can be put anywhere in the window
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Billy Troy
+ * @version 4/24/15
  */
 public class UFO
 {
@@ -28,7 +28,7 @@ public class UFO
     }
 
     /**
-     * creates the UFO with its color, size, coordinates, and beam
+     * creates the UFO with its color, size, coordinates, window, and beam
      *
      * @param    g2    a graphics object that is imported 
      */

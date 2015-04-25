@@ -4,10 +4,10 @@ import java.awt.Color;
 import java.awt.Polygon;
 
 /**
- * Write a description of class House here.
+ * A house with a customizable color that can be put anywhere in the window
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Billy Troy 
+ * @version 4/24/15
  */
 public class House
 {
@@ -19,9 +19,9 @@ public class House
     private Color color;
     /**
      * The constructor for objects of class Building
-     * @param x     the x point where the left side of the building starts to be drawn
-     * @param y     the y point where the top of the building starts to be drawn
-     * @param c     the color the building will be
+     * @param x     the x point where the left side of the house starts to be drawn
+     * @param y     the y point where the top of the house starts to be drawn
+     * @param c     the color the house will be
      */
     public House(int x, int y, Color c)
     {
@@ -31,7 +31,7 @@ public class House
     }
 
     /**
-     * creates the building with its color, size, coordinates, and windows
+     * creates the house with its color, size, coordinates, and windows
      *
      * @param    g2    a graphics object that is imported 
      */

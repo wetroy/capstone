@@ -7,7 +7,7 @@ import java.util.Random;
  * A building with a customizable color that can be put anywhere in the window
  * 
  * @author Billy Troy 
- * @version 4/14/15
+ * @version 4/24/15
  */
 public class Building
 {
@@ -15,9 +15,9 @@ public class Building
     private int xLeft;
     /** the y point where the top of the building starts to be drawn */    
     private int yTop;
-
+    /** the height the building will be */
     private int height;
-
+    /** the width the building will be */
     private int width;
     /** the color the building will be */
     private Color color;
@@ -25,6 +25,8 @@ public class Building
      * The constructor for objects of class Building
      * @param x     the x point where the left side of the building starts to be drawn
      * @param y     the y point where the top of the building starts to be drawn
+     * @param w     the width the building will be
+     * @param h     the height the building will be
      * @param c     the color the building will be
      */
     public Building(int x1, int y1, int w, int h, Color c)

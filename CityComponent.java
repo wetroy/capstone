@@ -5,25 +5,33 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.geom.Rectangle2D;
 /**
- * Write a description of class TreeComponent here.
+ * Class that creates instances of the classes that comprise the cityscape and delegates drawing the
+ *  cityscape to these object.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Billy Troy
+ * @version 4/24/15
  */
 public class CityComponent extends JPanel 
 {
-    /** description of instance variable x (add comment for each instance variable) */
-
+    /**PANEL_WIDTH  sets the width of the JPanel */
     private final int PANEL_WIDTH = 1000;
+    /**PANEL_HEIGHT  sets the height of the JPanel */
     private final int PANEL_HEIGHT = 1000;
-
+    /**current  sets the current order to a value between 1 and 10 */
     private int current;
+    /**sky  defines if the sky is none-existant, day, or night */
     private int sky;
+    /**space  sets the space to either true or false */
     private boolean space;
+    /**ufo  sets the ufo to either true or false */
     private boolean ufo;
     Random randomGenerator = new Random();
     /**
-     * Default constructor for objects of class TreeComponent
+     * Default constructor for objects of class CityComponent
+     * @param currentOrder  the order that the city will be drawn in
+     * @param s     the value the sky will be that will either be nothing, day, or night
+     * @param sp    the boolean value the space will be set to of either true or false
+     * @param u     the boolean value the ufo will be set to of either true or false
      */
     public CityComponent(int currentOrder, int s, boolean sp, boolean u)
     {
@@ -34,14 +42,25 @@ public class CityComponent extends JPanel
         setBackground (Color.black);
         setPreferredSize (new Dimension(PANEL_WIDTH, PANEL_HEIGHT));
     }
-
+    
+    /**
+     * creates the city with its order, sky, space, buildings, roads, grass, and ufo
+     * 
+     * @param order     the current state the city will be drawn as between 1 and 10
+     * @param g2        a graphics object that is imported
+     * @param sky       the current value of the sky between 0 and 2 that will make the sky either nothing, night, or day
+     * @param space     the current boolean value of the space with it either being true or false
+     * @param ufo       the current boolean value of the ufo with it either being true or false 
+     */
     public void drawCity (int order, Graphics2D g2,int sky, boolean space, boolean ufo)
     {
+        /** creates a new color to be used later */
         Color brown = new Color(156, 93, 82);
+        /** creates the early grass and road */
         Grass grass1 = new Grass(0,0, Color.green);
         Grass sidewalk = new Grass(0,300,Color.lightGray);
         Road dirt = new Road(0, 675, brown, brown, 1200, 150);
-
+        /** creates the first 10 houses */
         House house1 = new House(440, 600, Color.blue);
         House house2 = new House(600, 600, Color.orange);
         House house3 = new House(280, 600, Color.cyan);
@@ -53,7 +72,7 @@ public class CityComponent extends JPanel
         House house9 = new House(760, 400, Color.cyan);
         House house10 = new House(760, 600, Color.black);
 
-        //Building smallBuilding1 = new Building(410,550, 80, 90, Color.blue);
+        /** makes 9 out of the 10 houses into small buildings */
         Building smallBuilding2 = new Building(570,550, 80, 90, Color.orange);
         Building smallBuilding3 = new Building(250,550, 80, 90, Color.cyan);
         Building smallBuilding4 = new Building(90,550, 80, 90, Color.pink);
@@ -63,7 +82,7 @@ public class CityComponent extends JPanel
         Building smallBuilding8 = new Building(90,350, 80, 90, Color.black);
         Building smallBuilding9 = new Building(730,350, 80, 90, Color.cyan);
         Building smallBuilding10 = new Building(730,550, 80, 90, Color.black);
-
+        /** changes the small buildings to medium buildings */
         Building mediumBuilding2 = new Building(570,520, 100, 120, Color.orange);
         Building mediumBuilding3 = new Building(250,520, 100, 120, Color.cyan);
         Building mediumBuilding4 = new Building(90,520, 100, 120, Color.pink);
@@ -73,7 +92,7 @@ public class CityComponent extends JPanel
         Building mediumBuilding8 = new Building(90,320, 100, 120, Color.black);
         Building mediumBuilding9 = new Building(730,320, 100, 120, Color.cyan);
         Building mediumBuilding10 = new Building(730,520, 100, 120, Color.black);
-
+        /** changes the medium buildings to large ones which are the final product */
         Building largeBuilding2 = new Building(570,480, 120, 160, Color.orange);
         Building largeBuilding3 = new Building(250,480, 120, 160, Color.cyan);
         Building largeBuilding4 = new Building(90,480, 120, 160, Color.pink);
@@ -83,7 +102,7 @@ public class CityComponent extends JPanel
         Building largeBuilding8 = new Building(90,280, 120, 160, Color.black);
         Building largeBuilding9 = new Building(730,280, 120, 160, Color.cyan);
         Building largeBuilding10 = new Building(730,480, 120, 160, Color.black);
-
+        /** checks to see which order the city is currently in and draws it accordingly */
         if (order == 1)
         {
             grass1.draw(g2);
@@ -241,7 +260,7 @@ public class CityComponent extends JPanel
             largeBuilding9.draw(g2);
             largeBuilding10.draw(g2);
         }
-
+        /** checks to see if the sky should be drawn and then follows to check which sky should be drawn, day or night, and if the space should be drawn as well because the space can only be drawn if the sky is not 0 */
         if(sky != 0)
         {
             if(sky == 1)
@@ -361,7 +380,7 @@ public class CityComponent extends JPanel
                 }
             }
         }
-
+        /** checks to see if a ufo should be drawn at a random position */
         if(ufo == true)
         {
             int x = randomGenerator.nextInt(950);
@@ -371,9 +390,7 @@ public class CityComponent extends JPanel
         }
     }
 
-    //-----------------------------------------------------------------
-    //  Performs the initial calls to the drawFractal method.
-    //-----------------------------------------------------------------
+    /** initially draws the city */
     public void paintComponent (Graphics page)
     {
         super.paintComponent (page);
@@ -382,47 +399,49 @@ public class CityComponent extends JPanel
         drawCity (current, g2, sky, space, ufo);
     }
 
-    //-----------------------------------------------------------------
-    //  Sets the fractal order to the value specified.
-    //-----------------------------------------------------------------
+    /** sets the order to the specified value */
     public void setOrder (int order)
     {
         current = order;
     }
 
-    //-----------------------------------------------------------------
-    //  Returns the current order.
-    //-----------------------------------------------------------------
+    /** returns the current order */
     public int getOrder ()
     {
         return current;
     }
 
+    /** sets the sky to the specified value */
     public void setSky(int s)
     {
         sky = s;
     }
 
+    /** returns the current value of sky */
     public int getSky()
     {
         return sky;
     }
 
+    /** sets space to either true or false */
     public void setSpace(boolean sp)
     {
         space = sp;
     }
 
+    /** returns the current value of the space */
     public boolean getSpace()
     {
         return space;
     }
     
+    /** sets the ufo to either true or false */
     public void setUfo(boolean u)
     {
         ufo = u;
     }
-    
+  
+    /** returns the current value of the ufo */
     public boolean getUfo()
     {
         return ufo;

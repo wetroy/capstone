@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=x\ y\ c
 comment0.target=House(int,\ int,\ java.awt.Color)
-comment0.text=\r\n\ The\ constructor\ for\ objects\ of\ class\ Building\r\n\ @param\ x\ \ \ \ \ the\ x\ point\ where\ the\ left\ side\ of\ the\ building\ starts\ to\ be\ drawn\r\n\ @param\ y\ \ \ \ \ the\ y\ point\ where\ the\ top\ of\ the\ building\ starts\ to\ be\ drawn\r\n\ @param\ c\ \ \ \ \ the\ color\ the\ building\ will\ be\r\n
+comment0.text=\r\n\ The\ constructor\ for\ objects\ of\ class\ Building\r\n\ @param\ x\ \ \ \ \ the\ x\ point\ where\ the\ left\ side\ of\ the\ house\ starts\ to\ be\ drawn\r\n\ @param\ y\ \ \ \ \ the\ y\ point\ where\ the\ top\ of\ the\ house\ starts\ to\ be\ drawn\r\n\ @param\ c\ \ \ \ \ the\ color\ the\ house\ will\ be\r\n
 comment1.params=g2
 comment1.target=void\ draw(java.awt.Graphics2D)
-comment1.text=\r\n\ creates\ the\ building\ with\ its\ color,\ size,\ coordinates,\ and\ windows\r\n\r\n\ @param\ \ \ \ g2\ \ \ \ a\ graphics\ object\ that\ is\ imported\ \r\n
+comment1.text=\r\n\ creates\ the\ house\ with\ its\ color,\ size,\ coordinates,\ and\ windows\r\n\r\n\ @param\ \ \ \ g2\ \ \ \ a\ graphics\ object\ that\ is\ imported\ \r\n
 numComments=2

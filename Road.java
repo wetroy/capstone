@@ -3,10 +3,10 @@ import java.awt.geom.Rectangle2D;
 import java.awt.Color;
 
 /**
- * Write a description of class Road here.
+ * A road with a customizable color and dashed lines that can be places anywhere in the window
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Billy Troy
+ * @version 4/24/15
  */
 public class Road
 {
@@ -14,17 +14,22 @@ public class Road
     private int xLeft;
     /** the y point where the top of the road starts to be drawn */    
     private int yTop;
-    
+    /** the color the dashed lines will be */
     private Color lines;
-    
+    /** the main color of the road or pavement */
     private Color pavement;
-    
+    /** the length of the road */
     private int length;
+    /** the height of the road */
     private int height;
     /**
      * The constructor for objects of class Road
      * @param x     the x point where the left side of the road starts to be drawn
      * @param y     the y point where the top of the road starts to be drawn
+     * @param l     the color the dashed lines will be
+     * @param p     the main color the road will be
+     * @param len   the length the road will be
+     * @param h     the height the road will be
      */
     public Road(int x, int y, Color l, Color p, int len, int h)
     {

@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.util.Random;
 
 /**
- * A moon that can be put anywhere in the window
+ * The space that goes in the sky
  * 
  * @author Billy
  * @version 10/1/14
@@ -15,9 +15,11 @@ public class Space
     private int xLeft;
     /** the y point where the top of the moon starts to be drawn */    
     private int yTop;
-    
+    /** the main color of the moon or sun */
     private Color main;
+    /** if it is drawing a moon this will create the color of the craters */
     private Color secondary;
+    /** this is the color that the stars will be if it is night time */
     private Color stars;
     /**
      * The constructor for objects of class Moon
@@ -37,7 +39,7 @@ public class Space
     }
 
     /**
-     * creates the moon with its color, size, coordinates, and craters
+     * creates the spaceon with its various objects and colors 
      *
      * @param    g2    a graphics object that is imported 
      */
